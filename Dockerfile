@@ -31,6 +31,7 @@ RUN pip install \
     "devpi-web==${DEVPI_WEB_VERSION}" \
     "devpi-server==${DEVPI_SERVER_VERSION}" \
     devpi-theme-16
+RUN pip install -U git+https://github.com/fanjames/devpi-lockdown.git
 
 EXPOSE 3141
 VOLUME /data
