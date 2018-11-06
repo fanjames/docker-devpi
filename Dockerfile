@@ -26,7 +26,7 @@ RUN pip install virtualenv \
     && $VIRTUAL_ENV/bin/pip install pip==$PYTHON_PIP_VERSION
 ENV PATH $VIRTUAL_ENV/bin:$PATH
 
-RUN pip install \
+RUN pip install devpi-theme-16 \
     "devpi-client==${DEVPI_CLIENT_VERSION}" \
     "devpi-web==${DEVPI_WEB_VERSION}" \
     "devpi-server==${DEVPI_SERVER_VERSION}"
